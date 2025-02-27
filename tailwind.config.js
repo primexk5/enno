@@ -4,9 +4,14 @@
   theme: {
     extend: {
       animation: {
-        'bounce-slow': 'bounce 7s infinite',
+        'bounce-custom': 'bounce-custom 3s infinite ease-in-out',
       },
+      keyframes: {
+        'bounce-custom': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
     },
   },
   plugins: [],
-}
+}}
